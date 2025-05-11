@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+.users {
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid;
+}
+
