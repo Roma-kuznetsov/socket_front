@@ -77,8 +77,7 @@ const AuthModal = () => {
 
           <Button
             disabled={isLoading}
-            type="submit"
-            className="submit-btn">
+            type="submit">
             {activeTab === 'login' ? 'Войти' : 'Зарегистрироваться'}
           </Button>
         </form>
