@@ -1,3 +1,4 @@
+import { memo } from "react";
 import style from "./ContactLink.module.css"
 
 const ContactLink = ({ name, isPrivate, lastMessage, className, ...props }) => {
@@ -6,13 +7,11 @@ const ContactLink = ({ name, isPrivate, lastMessage, className, ...props }) => {
             <div className={style.nameBlock}>
                 <div>{name}</div>
             </div>
-
             {lastMessage && isPrivate &&
                 <div>Last: {lastMessage}</div>
             }
-            {/* <div>фффф</div> */}
         </div>
     );
 };
 
-export default ContactLink;
+export default memo(ContactLink);
