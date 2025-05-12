@@ -114,7 +114,7 @@ export const WebsocketProvider = ({ children }) => {
                 socket.off("auth_error")
             }
         }
-    }, [socket, token]);
+    }, [socket, token, myId]);
 
     return (
         <WebsocketContext.Provider value={{ createRoom, sendMessage, isSocketReady }}>
